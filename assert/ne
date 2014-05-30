@@ -15,11 +15,11 @@
 #  Foundation, Inc., 51 Franklin Street, Fifth Floor, Boston,
 #  MA 02110-1301, USA.
 
-# usage: $0 testname op1 op2 debug-info
+# usage: $0 testname expected actual debug-info
 
-[[ $2 -ge $3 ]]
+[[ $2 -ne $3 ]]
 t=$?
 
-msg="$2 not greater than or equal to $3."
+msg="Expected $2 to not equal $3."
 
 "$(dirname $0)/assert" "$1" "$t" "$msg" "$4"

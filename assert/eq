@@ -20,7 +20,6 @@
 [[ $2 -eq $3 ]]
 t=$?
 
-#~ msg="[[ $2 -eq $3 ]]"
 msg="Expected $2, got $3."
 
 "$(dirname $0)/assert" "$1" "$t" "$msg" "$4"

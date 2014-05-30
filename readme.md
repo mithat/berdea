@@ -12,7 +12,7 @@ TL;DR
     * Use assertions:
         *  `assert/assert` is a low level, general purpose assertion handler.
         * High-level assertions are available in the same directory (needs more!)
-    * You can group tests using filterable filenames, e.g. `Eating-a-stick-of-butter.api.tst`
+    * You can group tests using filterable filenames, e.g. `Eating-a-stick-of-butter.api.test`
 3. Specify any setup and teardown you need in the files in `fixtures/`
 4. `run-all` will run all the tests (i.e., all the files ending with `.test`) 
    and report pass/fail statuses.

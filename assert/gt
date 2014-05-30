@@ -20,7 +20,6 @@
 [[ $2 -gt $3 ]]
 t=$?
 
-#~ msg="[[ $2 -gt $3 ]]"
 msg="$2 not greater than $3."
 
 "$(dirname $0)/assert" "$1" "$t" "$msg" "$4"
