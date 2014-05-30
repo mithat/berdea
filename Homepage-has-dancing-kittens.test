@@ -1,0 +1,12 @@
+#!/bin/bash
+
+# Example of using low-level assertion, e.g.  if one of the existing doesn't
+# match and you don't want to write one.
+
+expected="dancing kittens"
+actual=$(curl -s http://mithatkonar.com -A "Mozilla")
+
+echo "$actual" | grep "$expected" >> /dev/null
+r=$?
+
+./assert/assert "$(basename $0 .test)" $r "\"$expected\" not found"

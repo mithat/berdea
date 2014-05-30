@@ -1,0 +1,8 @@
+#!/bin/bash
+
+## teardown fixture for tests
+function teardown ()
+{
+    # Teardown whatever you need to tear down here.
+    :
+}

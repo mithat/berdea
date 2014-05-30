@@ -1,0 +1,10 @@
+#!/bin/bash
+
+# Example of using high-level assertion.
+
+expected=406
+
+# use curl, get response code only
+actual=$(curl -sL -w "%{http_code}" "http://mithatkonar.com" -o /dev/null)
+
+./assert/eq "$(basename $0 .test)" $expected $actual

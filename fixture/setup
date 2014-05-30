@@ -1,0 +1,8 @@
+#!/bin/bash
+
+## setup fixture for tests
+function setup ()
+{
+    # Set up test data, DBs or whatever here.
+    :
+}
