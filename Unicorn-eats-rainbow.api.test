@@ -2,7 +2,7 @@
 
 # Example of a failing test.
 
-expected="candy turds"
+expected="candy and lemonade"
 actual=$(curl -s "http://mithatkonar.com/api/unicorn/eats/rainbow" -A "Mozilla")
 
 ./assert/seq "$(basename $0 .test)" "$expected" "no $expected"

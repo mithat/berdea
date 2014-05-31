@@ -17,9 +17,9 @@
 
 # usage: $0 testname expected actual debug-info
 
-[[ "$2" = "$3" ]]
+[[ "$2" != "$3" ]]
 t=$?
 
-msg="Expected: $2 \n    Got: $3"
+msg="Expected \"$2\" to not equal \"$3\"."
 
 "$(dirname $0)/assert" "$1" "$t" "$msg" "$4"
